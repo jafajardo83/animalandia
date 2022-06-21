@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="icon" href="img/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/30232a80d3.js" crossorigin="anonymous"></script>
+	<title>Animalandia</title>
+</head>
+<body>
+
+<header>
+	<div class="logo">
+		<img src="img/logo.jpg">
+	</div>
+	<div class="sesion">
+		<img src="img/golden.jpg">
+		<span>
+			<strong>Bienvenido,</strong><br>usuario
+			<i class="fas fa-sign-out-alt"></i>
+		</span>
+	</div>
+</header>
+
+<section id="dashboard">
+	<article class="menu">
+		<ul>
+			<li class="item"><a href="">Usuarios</a></li>
+			<li class="item"><a href="">Usuarios</a></li>
+			<li class="item"><a href="">Usuarios</a></li>
+			<li class="item"><a href="">Usuarios</a></li>
+			<li class="item"><a href="">Usuarios</a></li>
+		</ul>
+	</article>
+	<article class="contenido">
+	
+        <form action="" method="" class="form-producto">
+            <div class="form-group">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <input type="text" name="descripcion" id="descripcion" class="form-input" placeholder="Ingresa el nombre del producto">
+            </div>
+            <div class="form-group">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" name="precio" id="precio" class="form-input" placeholder="Ingresa el precio">
+            </div>
+            <div class="form-group">
+                <label for="precio" class="form-label">Precio</label>
+                <select name="categoria" class="form-select">
+                   
+                   <c:foreach>
+                    <option value="id">nombre</option>
+                </c:foreach>
+                   
+                </select>
+            </div>
+ 
+            <div class="form-group">
+                <input type="submit" name="guardar" value="Guardar" class="form-button btn-morado">
+            </div>
+       
+            
+        </form>
+	</article>
+</section>
+
+</body>
+</html>
